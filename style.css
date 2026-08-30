@@ -1,0 +1,247 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+.container{
+    width:90%;
+    max-width:700px;
+    margin:50px auto;
+    background:#ffffff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+h1{
+    color:#8B0000;
+    margin-bottom:10px;
+}
+
+h3{
+    color:#444;
+    margin-bottom:10px;
+}
+
+p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+button{
+    background:#d4af37;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#b8860b;
+}
+
+form{
+    text-align:left;
+    margin-top:20px;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    margin-top:5px;
+    margin-bottom:10px;
+    font-size:16px;
+}
+
+textarea{
+    height:80px;
+    resize:none;
+}
+
+h2{
+    color:#8B0000;
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+input, textarea, select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    margin-top:5px;
+    font-size:16px;
+}
+
+textarea{
+    height:80px;
+    resize:none;
+}
+
+
+   .btn-group{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+
+.btn-group .btn,
+.btn-group button{
+    flex:1;
+    background:#d4af37;
+    color:white;
+    text-decoration:none;
+    border:none;
+    padding:15px;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.btn-group .btn:hover,
+.btn-group button:hover{
+    background:#b8860b;
+}
+.btn-group button{
+    width:100%;
+}
+
+.event-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin:20px 0;
+}
+
+.event-card{
+    border:2px solid #ddd;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+    font-size:40px;
+    cursor:pointer;
+    transition:0.3s;
+    background:white;
+}
+
+.event-card p{
+    margin-top:10px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.event-card:hover{
+    transform:scale(1.05);
+}
+
+.selected{
+    border:3px solid #d4af37;
+    background:#fff8dc;
+}
+/* ========================= */
+/* MENU PAGE */
+/* ========================= */
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    margin-top:25px;
+}
+
+.menu-card{
+    background:#ffffff;
+    border:2px solid #d4af37;
+    border-radius:15px;
+    text-decoration:none;
+    color:#333;
+    font-size:20px;
+    font-weight:bold;
+    height:120px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    transition:.3s;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.menu-card span{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.menu-card:hover{
+    background:#fff8dc;
+    border-color:#b8860b;
+    transform:translateY(-3px);
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
+}
+
+/* Bottom Buttons */
+
+.btn-group{
+    display:flex;
+    gap:12px;
+    margin-top:30px;
+}
+
+.btn-group .btn,
+.btn-group button{
+
+    flex:1;
+
+    background:#d4af37;
+    color:#fff;
+
+    border:none;
+    border-radius:10px;
+
+    padding:15px;
+
+    text-decoration:none;
+    text-align:center;
+
+    font-size:17px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.btn-group .btn:hover,
+.btn-group button:hover{
+
+    background:#b8860b;
+
+}
+
+.btn-group button:disabled{
+
+    opacity:1;
+    cursor:default;
+
+}

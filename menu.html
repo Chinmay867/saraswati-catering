@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Categories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🍽️ Saraswati Catering</h1>
+    <h2>Select Menu Category</h2>
+
+    <div class="menu-grid">
+
+        <a href="vegstarter.html" class="menu-card">
+            🥗
+            <span>Veg Starter</span>
+        </a>
+
+        <a href="nonvegstarter.html" class="menu-card">
+            🍗
+            <span>Non-Veg Starter</span>
+        </a>
+
+        <a href="rice.html" class="menu-card">
+            🍚
+            <span>Rice</span>
+        </a>
+
+        <a href="biriyani.html" class="menu-card">
+            🍛
+            <span>Biriyani</span>
+        </a>
+
+        <a href="vegmain.html" class="menu-card">
+            🥦
+            <span>Veg Main</span>
+        </a>
+
+        <a href="nonvegmain.html" class="menu-card">
+            🍖
+            <span>Non-Veg Main</span>
+        </a>
+
+        <a href="sides.html" class="menu-card">
+            🥗
+            <span>Sides</span>
+        </a>
+
+        <a href="mocktail.html" class="menu-card" id="mocktailCard">
+            🍹
+            <span>Mocktail</span>
+        </a>
+
+        <a href="beverages.html" class="menu-card">
+            🥤
+            <span>Beverages</span>
+        </a>
+
+        <a href="sweets.html" class="menu-card">
+            🍰
+            <span>Sweets</span>
+        </a>
+
+    </div>
+
+    <div class="btn-group">
+
+        <a href="index.html" class="btn">
+            ⬅ Back
+        </a>
+
+        <button type="button" id="selectedBtn">
+            🛒 Selected : 0
+        </button>
+
+        <a href="customer.html" class="btn">
+            Next ➜
+        </a>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+window.onload = function () {
+
+    // =========================
+    // MOCKTAIL
+    // =========================
+
+    let mocktailItems =
+    JSON.parse(localStorage.getItem("mocktailItems")) || [];
+
+    let mocktailCount = mocktailItems.length;
+
+    if (mocktailCount > 0) {
+
+    document.getElementById("mocktailCard").innerHTML = `
+        🍹
+        <span>Mocktail ✔ (${mocktailCount})</span>
+    `;
+
+}
+
+
+    // =========================
+    // BIRYANI
+    // =========================
+
+    let biryaniItems =
+        JSON.parse(localStorage.getItem("biryaniItems")) || [];
+
+    let biryaniCount = biryaniItems.length;
+
+    if (biryaniCount > 0) {
+
+        let biryaniCard =
+            document.querySelector('a[href="biriyani.html"]');
+
+        biryaniCard.innerHTML = `
+            🍛
+            <span>Biriyani ✔ (${biryaniCount})</span>
+        `;
+
+    }
+
+
+    // =========================
+    // RICE & BREAD
+    // =========================
+
+    let riceItems =
+        JSON.parse(localStorage.getItem("riceItems")) || [];
+
+    let riceCount = riceItems.length;
+
+    if (riceCount > 0) {
+
+        let riceCard =
+            document.querySelector('a[href="rice.html"]');
+
+        riceCard.innerHTML = `
+            🍚
+            <span>Rice ✔ (${riceCount})</span>
+        `;
+
+    }
+
+
+    // =========================
+    // SIDES
+    // =========================
+
+    let sidesItems =
+        JSON.parse(localStorage.getItem("sidesItems")) || [];
+
+    let sidesCount = sidesItems.length;
+
+    if (sidesCount > 0) {
+
+        let sidesCard =
+            document.querySelector('a[href="sides.html"]');
+
+        sidesCard.innerHTML = `
+            🥗
+            <span>Sides ✔ (${sidesCount})</span>
+        `;
+
+    }
+
+
+    // =========================
+    // SWEETS
+    // =========================
+
+    let sweetsItems =
+        JSON.parse(localStorage.getItem("sweetsItems")) || [];
+
+    let sweetsCount = sweetsItems.length;
+
+    if (sweetsCount > 0) {
+
+        let sweetsCard =
+            document.querySelector('a[href="sweets.html"]');
+
+        sweetsCard.innerHTML = `
+            🍰
+            <span>Sweets ✔ (${sweetsCount})</span>
+        `;
+
+    }
+
+
+    // =========================
+    // BEVERAGES
+    // =========================
+
+    let beveragesItems =
+        JSON.parse(localStorage.getItem("beveragesItems")) || [];
+
+    let beveragesCount = beveragesItems.length;
+
+    if (beveragesCount > 0) {
+
+        let beveragesCard =
+            document.querySelector('a[href="beverages.html"]');
+
+        beveragesCard.innerHTML = `
+            ☕
+            <span>Beverages ✔ (${beveragesCount})</span>
+        `;
+
+    }
+
+
+    // =========================
+    // VEG STARTER
+    // =========================
+
+    let vegstarterItems =
+        JSON.parse(localStorage.getItem("vegstarterItems")) || [];
+
+    let vegstarterCount = vegstarterItems.length;
+
+    if (vegstarterCount > 0) {
+
+        let vegstarterCard =
+            document.querySelector('a[href="vegstarter.html"]');
+
+        vegstarterCard.innerHTML = `
+            🥗
+            <span>Veg Starter ✔ (${vegstarterCount})</span>
+        `;
+
+    }
+    // =========================
+    // VEG MAIN
+    // =========================
+
+    let vegmainItems =
+        JSON.parse(localStorage.getItem("vegmainItems")) || [];
+
+    let vegmainCount = vegmainItems.length;
+
+    if(vegmainCount > 0){
+
+        let vegmainCard =
+         document.querySelector('a[href="vegmain.html"]');
+
+        vegmainCard.innerHTML = `
+            🥦
+            <span>Veg Main ✔ (${vegmainCount})</span>
+        `;
+
+    }
+    // =========================
+    // NON-VEG STARTER
+    // =========================
+
+    let nonvegstarterItems =
+        JSON.parse(localStorage.getItem("nonvegstarterItems")) || [];
+
+    let nonvegstarterCount = nonvegstarterItems.length;
+
+    if (nonvegstarterCount > 0) {
+
+        let nonvegstarterCard =
+            document.querySelector('a[href="nonvegstarter.html"]');
+
+        nonvegstarterCard.innerHTML = `
+            🍗
+            <span>Non-Veg Starter ✔ (${nonvegstarterCount})</span>
+        `;
+
+    }
+
+    // =========================
+    // NON-VEG MAIN
+    // =========================
+
+    let nonvegmainItems =
+        JSON.parse(localStorage.getItem("nonvegmainItems")) || [];
+
+    let nonvegmainCount = nonvegmainItems.length;
+
+    if (nonvegmainCount > 0) {
+
+        let nonvegmainCard =
+            document.querySelector('a[href="nonvegmain.html"]');
+
+        nonvegmainCard.innerHTML = `
+            🍖
+            <span>Non-Veg Main ✔ (${nonvegmainCount})</span>
+        `;
+
+    }
+    // =========================
+    // TOTAL SELECTED
+    // =========================
+
+    let totalSelected =
+        mocktailCount +
+        biryaniCount +
+        riceCount +
+        sidesCount +
+        sweetsCount +
+        beveragesCount +
+        vegstarterCount +
+        vegmainCount +
+        nonvegstarterCount+
+        nonvegmainCount;
+
+    document.getElementById("selectedBtn").innerHTML =
+        "🛒 Selected : " + totalSelected;
+
+};
+</script>
+</body>
+</html>

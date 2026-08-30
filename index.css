@@ -1,0 +1,193 @@
+/* =========================
+   HOME / CREATE BILL PAGE
+========================= */
+
+.home-page{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:25px 15px;
+    box-sizing:border-box;
+    background:
+        radial-gradient(circle at top,#fff8df 0%,transparent 45%),
+        linear-gradient(135deg,#fffaf0,#f5ead0);
+}
+
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.home-card{
+    width:100%;
+    max-width:520px;
+    box-sizing:border-box;
+    padding:45px 40px;
+    text-align:center;
+    background:rgba(255,255,255,.96);
+    border:1px solid #ead9a8;
+    border-radius:24px;
+    box-shadow:0 15px 45px rgba(0,0,0,.14);
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.home-logo{
+    width:85px;
+    height:85px;
+    margin:0 auto 20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#fff8df;
+    border:1px solid #ead9a8;
+    border-radius:22px;
+
+    font-size:42px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+
+/* =========================
+   BRAND
+========================= */
+
+.home-card h1{
+    margin:0;
+    color:#8B0000;
+    font-size:34px;
+    letter-spacing:.3px;
+}
+
+.tagline{
+    margin:10px 0 0;
+    color:#777;
+    font-size:14px;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider{
+    width:70px;
+    height:3px;
+    margin:25px auto;
+    background:#d4af37;
+    border-radius:10px;
+}
+
+
+/* =========================
+   CREATE BILL TITLE
+========================= */
+
+.home-card h2{
+    margin:0;
+    color:#333;
+    font-size:24px;
+}
+
+.description{
+    max-width:390px;
+    margin:10px auto 28px;
+    color:#777;
+    line-height:1.6;
+    font-size:14px;
+}
+
+
+/* =========================
+   CREATE BILL BUTTON
+========================= */
+
+.create-bill-btn{
+    width:100%;
+    padding:16px 20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#8B0000;
+    color:white;
+
+    font-size:17px;
+    font-weight:bold;
+
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(139,0,0,.22);
+}
+
+.create-bill-btn span{
+    font-size:20px;
+    transition:.3s;
+}
+
+.create-bill-btn:hover{
+    background:#680000;
+    transform:translateY(-2px);
+    box-shadow:0 12px 25px rgba(139,0,0,.28);
+}
+
+.create-bill-btn:hover span{
+    transform:translateX(4px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.home-footer{
+    margin-top:22px;
+    color:#8B0000;
+    font-size:13px;
+    text-align:center;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+    .home-page{
+        padding:20px 12px;
+    }
+
+    .home-card{
+        padding:35px 22px;
+        border-radius:20px;
+    }
+
+    .home-card h1{
+        font-size:28px;
+    }
+
+    .home-card h2{
+        font-size:21px;
+    }
+
+    .home-logo{
+        width:75px;
+        height:75px;
+        font-size:36px;
+    }
+
+}

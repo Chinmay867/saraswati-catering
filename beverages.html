@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Beverages Menu</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="beverages.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>☕ Beverages Menu</h1>
+<p>Select Your Beverage</p>
+
+<div class="beverages-grid">
+
+    <!-- 1 Coffee -->
+
+    <div class="item-card">
+
+        <img src="images/coffee.png"
+             alt="Coffee">
+
+        <h3>Coffee</h3>
+
+        <p>
+            Hot and refreshing coffee with
+            a rich and aromatic flavour.
+        </p>
+
+        <button class="select-btn"
+                data-item="Coffee">
+            Select
+        </button>
+
+    </div>
+
+
+    <!-- 2 Darjeeling Tea -->
+
+    <div class="item-card">
+
+        <img src="images/darjeeling-tea.png"
+             alt="Darjeeling Tea">
+
+        <h3>Darjeeling Tea</h3>
+
+        <p>
+            Premium Darjeeling tea with a
+            refreshing aroma and delicate taste.
+        </p>
+
+        <button class="select-btn"
+                data-item="Darjeeling Tea">
+            Select
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- Bottom Buttons -->
+
+<div class="btn-group">
+
+    <a href="menu.html" class="btn">
+        ⬅ Back
+    </a>
+
+    <button id="selectedBtn">
+        🛒 Selected : 0
+    </button>
+
+    <button id="saveBtn">
+        💾 Save & Back
+    </button>
+
+</div>
+
+</div>
+
+<script src="beverages.js"></script>
+
+</body>
+</html>

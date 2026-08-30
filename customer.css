@@ -1,0 +1,268 @@
+/* =========================
+   CUSTOMER PAGE
+========================= */
+
+.customer-page{
+    min-height:100vh;
+    padding:35px 20px;
+    background:linear-gradient(135deg,#fffaf0,#f8f1df);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.customer-header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.customer-header .logo{
+    font-size:45px;
+    margin-bottom:5px;
+}
+
+.customer-header h1{
+    margin:0;
+    color:#8B0000;
+    font-size:32px;
+}
+
+.customer-header p{
+    margin-top:8px;
+    color:#777;
+    font-size:15px;
+}
+
+
+/* =========================
+   CUSTOMER CARD
+========================= */
+
+.customer-card{
+    max-width:800px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    border:1px solid #ead9a8;
+    box-shadow:0 10px 35px rgba(0,0,0,.12);
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.card-title{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding-bottom:20px;
+    margin-bottom:25px;
+    border-bottom:1px solid #eee;
+}
+
+.card-title > span{
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#fff8df;
+    border-radius:12px;
+    font-size:25px;
+}
+
+.card-title h2{
+    margin:0;
+    color:#8B0000;
+}
+
+.card-title p{
+    margin:5px 0 0;
+    color:#777;
+    font-size:14px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    color:#333;
+    font-weight:bold;
+    font-size:15px;
+}
+
+.form-group label span{
+    color:#999;
+    font-weight:normal;
+    font-size:13px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+    width:100%;
+    box-sizing:border-box;
+    padding:13px 14px;
+    border:1.5px solid #ddd;
+    border-radius:10px;
+    font-size:15px;
+    outline:none;
+    background:#fff;
+    transition:.3s;
+    font-family:inherit;
+}
+
+.form-group textarea{
+    resize:vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus{
+    border-color:#d4af37;
+    box-shadow:0 0 0 3px rgba(212,175,55,.12);
+}
+
+
+/* =========================
+   TWO COLUMN
+========================= */
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+/* =========================
+   EVENT TYPE
+========================= */
+
+.event-type-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:12px;
+}
+
+.event-option{
+    padding:15px 8px;
+    background:#fff;
+    color:#333;
+    border:2px solid #ddd;
+    border-radius:10px;
+    font-size:14px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.event-option:hover{
+    border-color:#d4af37;
+    transform:translateY(-2px);
+}
+
+.event-option.selected{
+    background:#8B0000;
+    color:white;
+    border-color:#8B0000;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.customer-buttons{
+    display:flex;
+    gap:15px;
+    margin-top:30px;
+}
+
+.back-btn,
+.continue-btn{
+    flex:1;
+    padding:14px;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:bold;
+    text-align:center;
+    text-decoration:none;
+    cursor:pointer;
+    box-sizing:border-box;
+}
+
+.back-btn{
+    background:#f3f3f3;
+    color:#555;
+    border:1px solid #ddd;
+}
+
+.back-btn:hover{
+    background:#e8e8e8;
+}
+
+.continue-btn{
+    background:#8B0000;
+    color:white;
+    border:none;
+}
+
+.continue-btn:hover{
+    background:#680000;
+    transform:translateY(-2px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer-text{
+    text-align:center;
+    margin-top:25px;
+    color:#8B0000;
+    font-size:14px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:650px){
+
+    .customer-page{
+        padding:20px 12px;
+    }
+
+    .customer-card{
+        padding:20px;
+    }
+
+    .customer-header h1{
+        font-size:27px;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+        gap:0;
+    }
+
+    .customer-buttons{
+        flex-direction:column;
+    }
+    .event-type-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Saraswati Catering</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+<div class="home-page">
+
+    <div class="home-card">
+
+        <div class="home-logo">
+            🍽️
+        </div>
+
+        <h1>Saraswati Catering</h1>
+
+        <p class="tagline">
+            Premium Catering • Elegant Taste • Memorable Events
+        </p>
+
+        <div class="divider"></div>
+
+        <h2>Create New Bill</h2>
+
+        <p class="description">
+            Select your menu, enter customer details
+            and create a professional catering bill.
+        </p>
+
+        <button
+            class="create-bill-btn"
+            onclick="createBill()">
+
+            🧾 Create Bill
+            <span>➜</span>
+
+        </button>
+
+    </div>
+
+    <p class="home-footer">
+        ✨ Delicious Food • Beautiful Moments ✨
+    </p>
+
+</div>
+
+
+<script>
+
+function createBill(){
+
+    // Purane bill ka selected data clear
+    localStorage.removeItem("mocktailItems");
+    localStorage.removeItem("biryaniItems");
+    localStorage.removeItem("riceItems");
+    localStorage.removeItem("sidesItems");
+    localStorage.removeItem("sweetsItems");
+    localStorage.removeItem("beveragesItems");
+    localStorage.removeItem("vegstarterItems");
+    localStorage.removeItem("nonvegstarterItems");
+    localStorage.removeItem("vegmainItems");
+    localStorage.removeItem("nonvegmainItems");
+
+    // Customer details clear
+    localStorage.removeItem("customerData");
+
+    // Menu page
+    window.location.href = "menu.html";
+}
+
+</script>
+
+</body>
+</html>

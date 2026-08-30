@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Create Bill | Saraswati Catering</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="bill.css">
+
+</head>
+
+<body>
+
+<div class="bill-page">
+
+    <!-- HEADER -->
+
+    <div class="bill-header">
+
+        <div class="bill-logo">🍽️</div>
+
+        <h1>Saraswati Catering</h1>
+
+        <p>Premium Catering • Elegant Taste • Memorable Events</p>
+
+    </div>
+
+
+    <!-- BILL CARD -->
+
+    <div class="bill-card">
+
+        <div class="bill-top">
+
+            <div>
+                <h2>🧾 Catering Bill</h2>
+                <p id="billNumber">Bill No: —</p>
+            </div>
+
+            <div class="bill-status">
+                NEW BILL
+            </div>
+
+        </div>
+
+
+        <!-- CUSTOMER DETAILS -->
+
+        <div class="section">
+
+            <h3>👤 Customer Details</h3>
+
+            <div class="details-grid">
+
+                <div>
+                    <span>Customer Name</span>
+                    <strong id="customerName">—</strong>
+                </div>
+
+                <div>
+                    <span>Mobile Number</span>
+                    <strong id="mobile">—</strong>
+                </div>
+
+                <div>
+                    <span>Event Type</span>
+                    <strong id="eventType">—</strong>
+                </div>
+
+                <div>
+                    <span>Event Date</span>
+                    <strong id="eventDate">—</strong>
+                </div>
+
+                <div>
+                    <span>Members</span>
+                    <strong id="members">—</strong>
+                </div>
+
+                <div class="full-width">
+                    <span>Event Address</span>
+                    <strong id="address">—</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SELECTED ITEMS -->
+
+        <div class="section">
+
+            <h3>🍽️ Selected Items</h3>
+
+            <div id="selectedItems">
+
+                <!-- Items JavaScript se aayenge -->
+
+            </div>
+
+        </div>
+
+
+        <!-- BILL SUMMARY -->
+
+        <div class="bill-summary">
+
+            <div>
+                <span>Total Items</span>
+                <strong id="totalItems">0</strong>
+            </div>
+
+            <div>
+                <span>Total Amount</span>
+                <strong id="totalAmount">₹0</strong>
+            </div>
+
+            <div>
+                <span>Advance (20%)</span>
+                <strong id="advanceAmount">₹0</strong>
+            </div>
+
+            <div class="remaining">
+
+                <span>Remaining (80%)</span>
+
+                <strong id="remainingAmount">
+                    ₹0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- BUTTONS -->
+
+        <div class="bill-buttons">
+
+            <button
+                type="button"
+                class="back-btn"
+                onclick="history.back()">
+
+                ⬅ Back
+
+            </button>
+
+            <button
+                type="button"
+                class="print-btn"
+                onclick="window.print()">
+
+                🖨️ Print Bill
+
+            </button>
+           
+            <button
+                type="button"
+                class="save-image-btn"
+                id="saveImageBtn">
+               📸 Save Bill
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class="bill-footer">
+
+        ✨ Thank you for choosing Saraswati Catering ✨
+
+    </div>
+
+</div>
+
+
+<script src="bill.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="bill.js"></script>
+</body>
+</html>
