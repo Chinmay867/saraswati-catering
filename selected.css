@@ -255,3 +255,119 @@
     }
 
 }
+/* =========================
+   ADD NEW ITEM
+========================= */
+
+.add-item-section{
+    margin-top:25px;
+    padding:20px;
+    background:#fffaf0;
+    border:1px solid #ead9a8;
+    border-radius:12px;
+}
+
+.add-item-section h3,
+.price-section h3{
+    margin:0 0 15px;
+    color:#8B0000;
+    font-size:18px;
+}
+
+.add-item-form{
+    display:flex;
+    gap:10px;
+}
+
+.add-item-form input{
+    flex:1;
+    min-width:0;
+    padding:13px;
+    border:1.5px solid #ddd;
+    border-radius:9px;
+    font-size:15px;
+    outline:none;
+}
+
+.add-item-form input:focus,
+.price-section input:focus{
+    border-color:#d4af37;
+    box-shadow:0 0 0 3px rgba(212,175,55,.12);
+}
+
+.add-item-form button{
+    padding:12px 18px;
+    background:#8B0000;
+    color:white;
+    border:none;
+    border-radius:9px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.add-item-form button:hover{
+    background:#680000;
+}
+
+
+/* =========================
+   CUSTOM ITEM
+========================= */
+
+.custom-item{
+    background:#fffaf0;
+}
+
+
+/* =========================
+   PER PLATE PRICE
+========================= */
+
+.price-section{
+    margin-top:22px;
+    padding:20px;
+    background:#fff8df;
+    border:1px solid #ead9a8;
+    border-radius:12px;
+}
+
+.price-section label{
+    display:block;
+    margin-bottom:8px;
+    color:#333;
+    font-weight:bold;
+}
+
+.price-section input{
+    width:100%;
+    box-sizing:border-box;
+    padding:13px;
+    border:1.5px solid #ddd;
+    border-radius:9px;
+    font-size:16px;
+    outline:none;
+}
+
+.price-section p{
+    margin:9px 0 0;
+    color:#777;
+    font-size:13px;
+}
+
+
+/* =========================
+   MOBILE ADD ITEM
+========================= */
+
+@media(max-width:650px){
+
+    .add-item-form{
+        flex-direction:column;
+    }
+
+    .add-item-form button{
+        width:100%;
+        padding:14px;
+    }
+
+}
