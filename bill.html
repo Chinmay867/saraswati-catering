@@ -1,16 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Create Bill | Saraswati Catering</title>
+<title>Catering Bill | Saraswati Catering</title>
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="bill.css">
-
 </head>
 
 <body>
@@ -18,44 +17,28 @@
 <div class="bill-page">
 
     <!-- HEADER -->
-
     <div class="bill-header">
-
         <div class="bill-logo">🍽️</div>
-
         <h1>Saraswati Catering</h1>
-
         <p>Premium Catering • Elegant Taste • Memorable Events</p>
-
     </div>
 
-
     <!-- BILL CARD -->
-
-    <div class="bill-card">
+    <div class="bill-card" id="billCard">
 
         <div class="bill-top">
-
             <div>
                 <h2>🧾 Catering Bill</h2>
                 <p id="billNumber">Bill No: —</p>
             </div>
-
-            <div class="bill-status">
-                NEW BILL
-            </div>
-
+            <div class="bill-status">NEW BILL</div>
         </div>
 
-
         <!-- CUSTOMER DETAILS -->
-
         <div class="section">
-
             <h3>👤 Customer Details</h3>
 
             <div class="details-grid">
-
                 <div>
                     <span>Customer Name</span>
                     <strong id="customerName">—</strong>
@@ -85,29 +68,77 @@
                     <span>Event Address</span>
                     <strong id="address">—</strong>
                 </div>
-
             </div>
-
         </div>
-
 
         <!-- SELECTED ITEMS -->
-
         <div class="section">
-
             <h3>🍽️ Selected Items</h3>
-
-            <div id="selectedItems">
-
-                <!-- Items JavaScript se aayenge -->
-
-            </div>
-
+            <div id="selectedItems"></div>
         </div>
 
+        <!-- CATERING PRICE -->
+        <div class="section">
+            <h3>💰 Catering Price</h3>
+
+            <div class="details-grid">
+                <div>
+                    <span>Per Plate Price</span>
+                    <strong id="perPlatePrice">₹0</strong>
+                </div>
+
+                <div>
+                    <span>Members</span>
+                    <strong id="priceMembers">0</strong>
+                </div>
+
+                <div class="full-width">
+                    <span>Catering Total</span>
+                    <strong id="cateringTotal">₹0</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXTRA CHARGES -->
+        <div class="section extra-section">
+            <h3>➕ Extra Charges</h3>
+
+            <div class="extra-fields">
+
+                <div class="form-group">
+                    <label for="extraSalad">Salad (₹)</label>
+                    <input type="number" id="extraSalad"
+                           min="0" step="0.01" placeholder="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="extraMocktail">Mocktail (₹)</label>
+                    <input type="number" id="extraMocktail"
+                           min="0" step="0.01" placeholder="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="extraTea">Tea (₹)</label>
+                    <input type="number" id="extraTea"
+                           min="0" step="0.01" placeholder="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="extraCoffee">Coffee (₹)</label>
+                    <input type="number" id="extraCoffee"
+                           min="0" step="0.01" placeholder="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="extraSweets">Sweets (₹)</label>
+                    <input type="number" id="extraSweets"
+                           min="0" step="0.01" placeholder="0">
+                </div>
+
+            </div>
+        </div>
 
         <!-- BILL SUMMARY -->
-
         <div class="bill-summary">
 
             <div>
@@ -116,7 +147,17 @@
             </div>
 
             <div>
-                <span>Total Amount</span>
+                <span>Catering Total</span>
+                <strong id="summaryCatering">₹0</strong>
+            </div>
+
+            <div>
+                <span>Extra Charges Total</span>
+                <strong id="extrasTotal">₹0</strong>
+            </div>
+
+            <div>
+                <span>Grand Total</span>
                 <strong id="totalAmount">₹0</strong>
             </div>
 
@@ -126,62 +167,42 @@
             </div>
 
             <div class="remaining">
-
                 <span>Remaining (80%)</span>
-
-                <strong id="remainingAmount">
-                    ₹0
-                </strong>
-
+                <strong id="remainingAmount">₹0</strong>
             </div>
 
         </div>
 
-
         <!-- BUTTONS -->
-
         <div class="bill-buttons">
 
-            <button
-                type="button"
-                class="back-btn"
-                onclick="history.back()">
-
+            <button type="button" class="back-btn"
+                    onclick="history.back()">
                 ⬅ Back
-
             </button>
 
-            <button
-                type="button"
-                class="print-btn"
-                onclick="window.print()">
-
+            <button type="button" class="print-btn"
+                    onclick="window.print()">
                 🖨️ Print Bill
+            </button>
 
+            <button type="button" class="save-image-btn"
+                    id="saveImageBtn">
+                📸 Save Bill
             </button>
-           
-            <button
-                type="button"
-                class="save-image-btn"
-                id="saveImageBtn">
-               📸 Save Bill
-            </button>
+
         </div>
 
     </div>
 
-
     <div class="bill-footer">
-
         ✨ Thank you for choosing Saraswati Catering ✨
-
     </div>
 
 </div>
 
-
-<script src="bill.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="bill.js"></script>
+
 </body>
 </html>
