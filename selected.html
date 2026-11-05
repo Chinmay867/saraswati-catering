@@ -1,8 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,93 +18,102 @@
 <div class="selected-page">
 
     <!-- Header -->
-
     <div class="selected-header">
-
         <div class="logo">🍽️</div>
-
         <h1>Saraswati Catering</h1>
-
         <p>Selected Menu Items</p>
-
     </div>
 
-
     <!-- Main Card -->
-
     <div class="selected-card">
 
         <div class="card-title">
-
             <span>🛒</span>
-
             <div>
-                <h2>Your Selected Items</h2>
-                <p>Review your menu before creating the bill</p>
+                <h2>Preview Your Menu</h2>
+                <p>Review and customize your menu before generating the bill</p>
+            </div>
+        </div>
+
+        <!-- Selected Items -->
+        <div id="selectedItemsContainer">
+            <!-- Items JavaScript se aayenge -->
+        </div>
+
+        <!-- Add New Item -->
+        <div class="add-item-section">
+
+            <h3>➕ Add New Item</h3>
+
+            <div class="add-item-form">
+                <input
+                    type="text"
+                    id="newItemName"
+                    placeholder="Enter item name"
+                >
+
+                <button type="button" id="addItemBtn">
+                    + Add Item
+                </button>
             </div>
 
         </div>
 
-
-        <!-- Selected Items -->
-
-        <div id="selectedItemsContainer">
-
-            <!-- Items JavaScript se aayenge -->
-
-        </div>
-
-
-        <!-- Total -->
-
+        <!-- Total Items -->
         <div class="selected-summary">
-
             <span>Total Selected Items</span>
-
             <strong id="totalItems">0</strong>
-
         </div>
 
+        <!-- Per Plate Price -->
+        <div class="price-section">
+
+            <h3>💰 Catering Price</h3>
+
+            <label for="perPlatePrice">
+                Per Plate Price (₹)
+            </label>
+
+            <input
+                type="number"
+                id="perPlatePrice"
+                min="0"
+                step="0.01"
+                placeholder="Enter price per plate"
+            >
+
+            <p>Enter the catering price for one member.</p>
+
+        </div>
 
         <!-- Buttons -->
-
         <div class="selected-buttons">
 
             <button
                 type="button"
                 class="back-btn"
                 onclick="history.back()">
-
                 ⬅ Back
-
             </button>
-
 
             <button
                 type="button"
                 class="continue-btn"
                 id="continueBtn">
-
-                Create Bill ➜
-
+                Generate Bill ➜
             </button>
 
         </div>
 
     </div>
 
-
     <div class="footer-text">
-
         ✨ Please review your selections carefully ✨
-
     </div>
 
 </div>
 
-
 <script src="selected.js"></script>
 
 </body>
-
 </html>
